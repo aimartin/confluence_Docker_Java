@@ -8,7 +8,7 @@ RUN \
   echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee /etc/apt/sources.list.d/webupd8team-java.list && \
   apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886 && \
   apt-get update && \
-  apt-get install -y --force-yes oracle-java8-installer oracle-java8-set-default && \
+  apt-get install -y --force-yes oracle-java8-installer oracle-java8-set-default vim && \
   rm -rf /var/lib/apt/lists/* && \
   rm -rf /var/cache/oracle-jdk8-installer
 
